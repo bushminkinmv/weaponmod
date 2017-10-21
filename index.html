@@ -2,7 +2,8 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>WeaponTarkov</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -10,7 +11,68 @@
 		<header class="header-main">
 		</header>		
 		<main class="main-container">
-			<h1 class="visually-hidden"></h1>	
+			<h1 class="visually-hidden">WeaponTarkov</h1>
+			<section class="weapon-identify">
+				<h2 class="visually-hidden">Weapon-Name</h2>
+                <label class="weapon-identify__title" for="weapon-select">Выберите оружие</label> 
+                <select class="weapon-identify__select" id="weapon-select" name="weapon-name">
+                    <optgroup label="АК">
+                        <option value="akm-1">АКМ-1</option>
+                        <option value="akm-2">АКМ-2</option>
+                    </optgroup>
+                    <optgroup label="M16">
+                        <option value="m16-1">М16-1</option>
+                        <option value="m16-2">М16-2</option>
+                    </optgroup>
+                </select>
+            </section>
+			<section class="weapon-box">
+				<h2 class="visually-hidden">Weapon-Item</h2>
+				<div class="weapon-top-modules"></div>
+				<div class="weapon-bottom-modules"></div>
+		        <ul class="weapon-parameters">
+		            <li class="weapon-parameter weapon-parameter--status">
+		            	<span class="weapon-parameter__name centerer-flex">Техническое состояние</span>
+		            	<span class="weapon-parameter__value centerer-flex">100/100 (100)</span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--weight">
+		            	<span class="weapon-parameter__name centerer-flex">Вес</span>
+		            	<span class="weapon-parameter__value centerer-flex">5.3</span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--ergonomics">
+		            	<span class="weapon-parameter__name centerer-flex">Эргономика</span>
+		            	<span class="weapon-parameter__value centerer-flex"></span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--accuracy">
+		            	<span class="weapon-parameter__name centerer-flex">Базовая точность</span>
+		            	<span class="weapon-parameter__value centerer-flex"></span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--recoil">
+		            	<span class="weapon-parameter__name centerer-flex">Отдача</span>
+		            	<span class="weapon-parameter__value centerer-flex"></span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--speed">
+		            	<span class="weapon-parameter__name centerer-flex">Начальная скорость</span>
+		            	<span class="weapon-parameter__value centerer-flex">910 м/с</span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--mode">
+		            	<span class="weapon-parameter__name centerer-flex">Режимы стрельбы</span>
+		            	<span class="weapon-parameter__value centerer-flex">Один,Автом</span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--caliber">
+		            	<span class="weapon-parameter__name centerer-flex">Калибр</span>
+		            	<span class="weapon-parameter__value centerer-flex">5.45х39</span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--rof">
+		            	<span class="weapon-parameter__name centerer-flex">Скоростерльность</span>
+		            	<span class="weapon-parameter__value centerer-flex">650 в/м</span>
+		            </li>
+		            <li class="weapon-parameter weapon-parameter--distance">
+		            	<span class="weapon-parameter__name centerer-flex">Эффективная дальность</span>
+		            	<span class="weapon-parameter__value centerer-flex">650 метров</span>
+		            </li>
+		        </ul>
+			</section>
 		</main>		
 		<footer class="footer-main">
 		</footer>		
