@@ -88,19 +88,58 @@ body {
 
 	box-sizing: border-box;
 	width: 1260px;
-	min-height: 1260px;
+	min-height: 665px;
 
 	border: 1px solid yellow;
 }
 
+.weapon-top-modules {
+	box-sizing: border-box;
+	width: 100%;
+	height: 160px;	
+	border: 1px solid red;
+	text-align: center;
+}
+
+.weapon-img-wrap {
+	position: relative;
+}
+
+.weapon-middle-modules {
+	box-sizing: border-box;
+	position: absolute;
+	width: 490px;
+	height: 160px;
+	right: 0;
+	bottom: 0;
+	border: 1px solid red;
+}
+
+.weapon-img {
+	display: block;
+	margin-left: auto;
+	border: 1px solid blue;
+}
+
+
+
+.weapon-bottom-modules {
+	box-sizing: border-box;
+	width: 75%;
+	height: 160px;
+	margin-left: auto;	
+	border: 1px solid red;
+	text-align: center;
+}
+
 .weapon-parameters {
 	position: absolute;
-	bottom: 10px;
-	left: 10px;
+	bottom: 0px;
+	left: 0px;
 	z-index: 10;
 
 	box-sizing: border-box;
-	width: 400px;
+	width: 300px;
 	height: 270px;
 	margin: 0;
 	padding: 0;
